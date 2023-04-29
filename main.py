@@ -11,8 +11,7 @@ youtube_search = YouTubeSearch(youtube_api_key)
 
 query = input("Enter an Opinion: ")
 
-
-youtube_search.search_loop(query)
-
-
-# youtube_search.post_comment("mv4gQ7G-3RU", "Hello World")
+i=0
+while i>=0:
+    query = youtube_search.search_loop(query,i)
+    i+=1

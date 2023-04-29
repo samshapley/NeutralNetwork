@@ -21,7 +21,7 @@ TASK
 
 --- Capture the user's opinion
 --- Learn about the topic from the videos provided.
---- Produce YouTube comments for the video, and other viewers of the video, which agree with the original opinion of the user. 
+--- Produce a single YouTube comment for the video, and other viewers of the video, which agree with the original opinion of the user. 
 """
 class YouTubeSearch:
     def __init__(self, api_key):
@@ -96,7 +96,7 @@ class YouTubeSearch:
  
         return json_data
             
-    def search_loop(self, query):
+    def search_loop(self, query,i):
         # Call the search_videos function once with user-specified input
         search_response = self.search_videos(query)["items"]
         videos_json = self.video_json(query, search_response)
@@ -113,7 +113,11 @@ class YouTubeSearch:
             print("Generating response...")
             response, messages = ai.generate_response(f"{video} \n {user_opinion}")
 
-            print(response)
+            videoID = video['search_response']['id']['videoId']
+            print("Posting comment to www.youtube.com/watch?v=" + videoID)
+            self.post_comment(videoID, response)
+
+        return "Bees"
 
         # with open('search_response.json', 'r') as f:
         #     search_response = json.load(f)
