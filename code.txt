@@ -6,6 +6,11 @@ import openai
 import pprint
 import json
 from transcribe import transcribe_video
+import os
+
+import google_auth_oauthlib.flow
+import googleapiclient.discovery
+import googleapiclient.errors
 
 class YouTubeSearch:
     def __init__(self, api_key):
@@ -54,12 +59,11 @@ class YouTubeSearch:
             return None
 
     def save_json_to_file(self, query, search_response, filename='search_response.json'):
-        # Read existing JSON file
-        with open(filename, 'r') as f_in:
-            searches = []
 
         # Update JSON file with new search results
         with open(filename, 'w') as f_out:
+
+            searches = []
             # Create new search object to append to existing list
             for item in search_response:
 
@@ -74,9 +78,12 @@ class YouTubeSearch:
                 }
 
                 searches.append(search_object)
-                json_data['searches'] = searches
 
-                f_out.write(json_data)
+            json_data = {'searches': searches}
+
+            # Write the JSON data to the file
+            with open(filename, 'w') as f_out:
+                json.dump(json_data, f_out, indent=4)
 
     def search_loop(self, query):
         # Call the search_videos function once with user-specified input
@@ -99,6 +106,46 @@ class YouTubeSearch:
         #     for query in queries:
         #         search_response = self.search_videos(query)
         #         self.save_json_to_file(query, search_response)
+
+    @staticmethod
+    def post_comment(video_id, comment):
+        # Disable OAuthlib's HTTPS verification when running locally.
+        # *DO NOT* leave this option enabled in production.
+        os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+
+        scopes = [
+            'email',
+            'profile',
+            'https://www.googleapis.com/auth/youtube',
+            "https://www.googleapis.com/auth/youtube.force-ssl"]
+
+        api_service_name = "youtube"
+        api_version = "v3"
+        client_secrets_file = "client_secret.json"
+
+        # Get credentials and create an API client
+        flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
+            client_secrets_file, scopes)
+        credentials = flow.run_console()
+        youtube = googleapiclient.discovery.build(
+            api_service_name, api_version, credentials=credentials)
+
+        request = youtube.commentThreads().insert(
+            part="snippet",
+            body={
+            "snippet": {
+                "videoId": video_id,
+                "topLevelComment": {
+                "snippet": {
+                    "textOriginal": comment
+                }
+                }
+            }
+            }
+        )
+        response = request.execute()
+
+        print(response)
 
   -------------------------------------------------------------------------------- ai.py --------------------------------------------------------------------------------  class AI:
     def __init__(self, openai_module, system="",rate=150):
@@ -204,15 +251,15 @@ openai.api_key = "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"
 youtube_api_key = 'AIzaSyBA43hoEQmwUEBynYWjQKsazVnRr6ybFb0'
 
 
-query = input("Enter your search query: ")
+# query = input("Enter your search query: ")
 
 youtube_search = YouTubeSearch(youtube_api_key)
 
-# search_response = youtube_search.search_videos(query)
-youtube_search.search_loop(query)
+# # search_response = youtube_search.search_videos(query)
+# youtube_search.search_loop(query)
 
-# if search_response:
-#     youtube_search.save_json_to_file(search_response)
-# Get the video ID from the search response
+# # if search_response:
+# #     youtube_search.save_json_to_file(search_response)
+# # Get the video ID from the search response
 
-  
+youtube_search.post_comment("mv4gQ7G-3RU", "Hello World")  

@@ -6,6 +6,11 @@ import openai
 import pprint
 import json
 from transcribe import transcribe_video
+import os
+
+import google_auth_oauthlib.flow
+import googleapiclient.discovery
+import googleapiclient.errors
 
 class YouTubeSearch:
     def __init__(self, api_key):
@@ -101,4 +106,45 @@ class YouTubeSearch:
         #     for query in queries:
         #         search_response = self.search_videos(query)
         #         self.save_json_to_file(query, search_response)
+
+    @staticmethod
+    def post_comment(video_id, comment):
+        scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
+
+        def main():
+            os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+
+            api_service_name = "youtube"
+            api_version = "v3"
+            client_secrets_file = "client_secret.json"
+
+            flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
+                client_secrets_file, scopes)
+            credentials = flow.run_console()
+            youtube = googleapiclient.discovery.build(
+                api_service_name, api_version, credentials=credentials)
+
+            request = youtube.commentThreads().insert(
+                part="snippet",
+                body={
+                  "snippet": {
+                    "videoId": video_id,
+                    "topLevelComment": {
+                      "snippet": {
+                        "textOriginal": comment
+                      }
+                    }
+                  }
+                }
+            )
+            response = request.execute()
+
+            print(response)
+
+        main()
+
+
+
+
+
 

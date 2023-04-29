@@ -1,80 +1,80 @@
 {
     "searches": [
         {
-            "query": "hello",
+            "query": "I think climate change is fake. ",
             "search_response": {
                 "kind": "youtube#searchResult",
-                "etag": "3vRaADPkKuReRViSyiGZ49rLHJU",
+                "etag": "ITByNlB8IUE1V1U_onJc57tnMlU",
                 "id": {
                     "kind": "youtube#video",
-                    "videoId": "YQHsXMglC9A"
+                    "videoId": "mv4gQ7G-3RU"
                 },
                 "snippet": {
-                    "publishedAt": "2015-10-23T06:54:18Z",
-                    "channelId": "UComP_epzeKzvBX156r6pm1Q",
-                    "title": "Adele - Hello (Official Music Video)",
-                    "description": "Listen to \"Easy On Me\" here: http://Adele.lnk.to/EOM Pre-order Adele's new album \"30\" before its release on November 19: ...",
+                    "publishedAt": "2020-12-09T19:36:31Z",
+                    "channelId": "UCbewlkCKbV1B3xmKwXa1qsA",
+                    "title": "Is Climate Change a Hoax? | Our Climate Our Future, Chapter 6",
+                    "description": "You may have heard that climate change isn't happening or that it's all just a big hoax. Learn about how the issue of climate ...",
                     "thumbnails": {
                         "default": {
-                            "url": "https://i.ytimg.com/vi/YQHsXMglC9A/default.jpg",
+                            "url": "https://i.ytimg.com/vi/mv4gQ7G-3RU/default.jpg",
                             "width": 120,
                             "height": 90
                         },
                         "medium": {
-                            "url": "https://i.ytimg.com/vi/YQHsXMglC9A/mqdefault.jpg",
+                            "url": "https://i.ytimg.com/vi/mv4gQ7G-3RU/mqdefault.jpg",
                             "width": 320,
                             "height": 180
                         },
                         "high": {
-                            "url": "https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg",
+                            "url": "https://i.ytimg.com/vi/mv4gQ7G-3RU/hqdefault.jpg",
                             "width": 480,
                             "height": 360
                         }
                     },
-                    "channelTitle": "AdeleVEVO",
+                    "channelTitle": "Action for the Climate Emergency",
                     "liveBroadcastContent": "none",
-                    "publishTime": "2015-10-23T06:54:18Z"
+                    "publishTime": "2020-12-09T19:36:31Z"
                 }
             },
-            "transcript": " I think I'm using signal already. Hello. Can you hear me now? Sorry. Hello. Hello. It's me. I was wondering if after all these years you'd like to meet to go over everything. They say the time's supposed to heal you, but I am done much even. Hello. Can you hear me? I'm in California dreaming about who he used to be when we were younger and free. I forgot and how it felt before the world fell out. I feel there's such a difference between our friends and the many in my life. Hello. Hello. From the other side, I must have called it down to the side. To tell you, I'm sorry for everything that I've done the way I call you. I never seem to be home. Hello. From the other side, I can see that I'm just fine. To tell you, I'm sorry for breaking your heart, but it don't matter. It's clearly, I can't tell you about any more. Hello. How are you? It's so typical to me to talk about myself, I'm sorry. I hope that you will. Did you ever make it out of that town? When does it get over? It's no secret. They're the bold of us, surrounded out of time. So help from the other side. I must have called it down to the side. To tell you, I'm sorry for everything that I've done the way I call you. I never seem to be home. Hello. From the other side, I can see that I'm just fine. To tell you, I'm sorry for breaking your heart, but it don't matter. It's clearly, I can't tell you about any more. Hello. Hello. Hello. Hello. Hello. How are you? I must have called it down to the side. To tell you, I'm sorry for everything that I've done the way I call you. I never seem to be home. How to feel it now? And it's not because they don't care. To tell you, I'm sorry for breaking your heart, but it don't matter. It's clearly, I can't tell you about any more. Thank you."
+            "transcript": " music Hey, shark. Yeah. So science knows that burning fossil fuels creates a ton of CO2 and it predicts that more CO2 will heat up the earth. Right? And we're seeing these predictions come true and a ton of bad stuff's already happening to people. So why do we keep hearing that climate change is just normal? Or no big deal. Or that it's like not happening at all. Like it's just some big hoax. Oh, you know what I kind of can't talk about this right now. So I'm going to... I'm just joking. I'm just joking. Let's look at both those claims head on. It's true that the climate has changed for natural reasons. Mainly due to variations in the earth's orbit. But usually it happens slowly over thousands of years. So animals and even early humans had a chance to evolve and adapt. But now we're seeing levels of CO2 pollution spike super fast over just a few decades. What? That's not normal. Nope. Can we adapt to such sudden changes? I don't know. I mean, how can billions of people pick up their cities and move to a safer spot? We're in deep trouble if this gets out of control. So yeah, the climate does change on its own. But what we're seeing today? This time it's on us humans. Then there are some people that say climate change isn't happening at all. That it's some giant conspiracy. Yeah, I've heard that. Many of these people know how to use YouTube. But very few of them are actual climate scientists. In fact, many aren't scientists at all. Ask climate scientists, and 97% of them will tell you that it's real and humans are causing it. So who are you going to believe? Say 9 out of 10 dentists tell you you need a root canal. But then a professional Minecraft player tells you you don't. You wouldn't want to believe the dentists, but you would, right? Right, right. So why does it seem like we're not sure about climate change? Because a small number of people are screening loudly trying to make you believe that we just don't have enough information to be sure yet. I wouldn't anyone want to do that. Well, some of them are too scared to face a truth. Others think caring about climate change is a political issue. But carbon dioxide isn't a Republican or a Democrat. It just traps heat. And then there are people who are afraid that admitting the problem is real will hurt their businesses. They spend huge amounts of money to spread lives designed to make us believe that the science isn't settled. But that's just dishonest and dangerous. Exactly. We do have a problem and the sooner we face it, the sooner we can do something about it."
         },
         {
-            "query": "hello",
+            "query": "I think climate change is fake. ",
             "search_response": {
                 "kind": "youtube#searchResult",
-                "etag": "GDe5YnxRk6aEGoFrm14qVFavpTg",
+                "etag": "0w4iJ2yZ3VHN5M2AzzuGkA7O1Z4",
                 "id": {
                     "kind": "youtube#video",
-                    "videoId": "be12BC5pQLE"
+                    "videoId": "y2euBvdP28c"
                 },
                 "snippet": {
-                    "publishedAt": "2021-01-24T15:27:33Z",
-                    "channelId": "UCtSzfeO5IDD0byUhV1d7mdA",
-                    "title": "Adele - Hello (Lyrics)",
-                    "description": "Adele - Hello (Lyrics) Follow Adele : https://myspace.com/adelelondon\u200b https://www.facebook.com/adele\u200b ...",
+                    "publishedAt": "2014-12-15T22:58:13Z",
+                    "channelId": "UCH4BNI0-FOK2dMXoFtViWHw",
+                    "title": "Why People Don&#39;t Believe In Climate Science",
+                    "description": "Get the FACTS about climate change: http://youtu.be/ffjIyms1BX4 Don't miss our next video! SUBSCRIBE!",
                     "thumbnails": {
                         "default": {
-                            "url": "https://i.ytimg.com/vi/be12BC5pQLE/default.jpg",
+                            "url": "https://i.ytimg.com/vi/y2euBvdP28c/default.jpg",
                             "width": 120,
                             "height": 90
                         },
                         "medium": {
-                            "url": "https://i.ytimg.com/vi/be12BC5pQLE/mqdefault.jpg",
+                            "url": "https://i.ytimg.com/vi/y2euBvdP28c/mqdefault.jpg",
                             "width": 320,
                             "height": 180
                         },
                         "high": {
-                            "url": "https://i.ytimg.com/vi/be12BC5pQLE/hqdefault.jpg",
+                            "url": "https://i.ytimg.com/vi/y2euBvdP28c/hqdefault.jpg",
                             "width": 480,
                             "height": 360
                         }
                     },
-                    "channelTitle": "Aqua Lyrics",
+                    "channelTitle": "Be Smart",
                     "liveBroadcastContent": "none",
-                    "publishTime": "2021-01-24T15:27:33Z"
+                    "publishTime": "2014-12-15T22:58:13Z"
                 }
             },
-            "transcript": " Hello, it's me. I was wondering if after all these years it liked me to go over everything. We say the time's supposed to heal you, but I am done much healing. Hello, can you hear me? I'm in California dreaming about who used to be when we were younger and free. I forgot and how it felt before the world fell out. I feel there's such a difference between us and the many in my life. Hello from the other side. I must have caught a thousand times to tell you, I'm sorry for everything that I've learned. But when I call you never, seems to be home. Hello from the other side. At least I can say that I'm sorry. To tell you, I'm sorry for breaking your heart, but it don't matter. Please, until you apart and leave more. Hello. How are you? It's so typical to me to talk about myself, I'm sorry. I hope that you will. Did you ever make it out of that town where nothing ever happened? It's no secret that the both of us are running out of time. So help me understand, I must have caught a thousand times to tell you, I'm sorry for everything that I've learned. But when I call you never, seems to be home. Hello from the other side. At least I can say that I'm sorry. To tell you, I'm sorry for breaking your heart, but it don't matter. I believe that you will have hard and me, but it doesn't matter. Hello from the other side. I must have caught a thousand times to tell you, I'm sorry for everything that I've learned. But when I call you never, seems to be home. How are you? It's so typical to me to talk about myself, I'm sorry for breaking your heart, but it don't matter. I believe that you will have hard and me, but it doesn't matter."
+            "transcript": " Our last video gave you a nice, neat list of facts explaining why scientists are so sure the climate change is real and that humans are the main cause. We've filled libraries with reports and graphs and books about climate change more facts than you can shake a hockey stick at. It's still four out of 10 Americans aren't convinced. And consider this among the majority who do accept the science of climate change, folks don't seem to be doing much about it. But they were going to look at a few of the reasons why facts don't always work. Our brain fights with itself keep us from responding to threats and the science of why some people don't believe in climate science. Kurt Vonnegut once said, I was taught that the human brain was the crowning glory of evolution so far. But I think it's a very poor scheme for survival. The problem is we're human. Psychologists John Tuby says, our modern skulls, how is a stone age mind? We've come a long way since our cave dwelling days, what Tuby means is we're dealing with the threats of today using tools from our brain's evolutionary past. The issues that really grab our attention involved. Pain. According to Psychologists Daniel Gilbert, we respond more strongly to threats that are personal. They represent abrupt changes in our environment that are immoral or indecents and that are affecting us now. Climate change is a gradual, impersonal thing that always seems to live in the future. But if climate change threatened these puppies wouldn't you pay more attention? Our one brain is really too. One rational and one emotional. The writer looks like they're in control, but the elephant really has the last say. Lots of the time our emotional brain, elephant, isn't even listening. Let's say the writer love that article about how climate change is threatening banana crops, but the elephant isn't motivated to act until the bananas are gone. According to Psychologists Daniel Conum, when we're faced with uncertain threats about things we might lose in the distant future, our brains will invent all kinds of excuses not to act on them today. I mean, look at the way we talk about climate change. It always seems to happen in the future tense. Caretakers in the future, what the future holds, sheltering future generations stand up for our future. A pulba Yale University shows 65% of people think climate change will harm future generations and just 38% say it will harm them personally. This is what Conum and calls our optimism bias. Assuming that we face low risks than others do. Car accidents won't happen to us, or the next big hurricane surely won't hit here, because bad things only happen to other people. I can point to extreme storms like Hurricane Sandy or Typhoon Hyon as obvious effects of climate change, but someone else's bike point to them is proof that the climate is random. We have a tendency to cherry-pick evidence that supports our existing beliefs. It doesn't help that many climate change threats are becoming so familiar, but they're just normal. A new United Nations report raised the threat of climate change to a whole new level. Sevilla, pervasive, and irreversible, longer, hotter, drier droughts, and it will only get worse. World is ill-prepared for what is to come. Without action, there could be irreversible damage. Hercans and wildfires are always on the news. September 2014 was the 350th month in a row of higher than average temperatures. It's like a broken record, broken record, broken record. People also doubt climate change because they're uncertain about uncertainty. When scientists talk about uncertainties, all the known-nones, known-unnones, and unknown Many people think they're not confident in their findings when the opposite is true. Less than one in four Americans think that there's a scientific consensus about climate change yet 97% of scientists are in agreement. What we've got here is failure, just new case. What's weird is we don't apply this uncertainty about uncertainty to other issues. A 1% chance of a terrorist attack, and we're sounding all the alarms. Instead of drifting along toward tragedy, we will set a course towards safety. But nearly certain global disruption from climate change. There is not agreement around the fact of exactly what is causing this. The climate is always changing. Between pauses and that we are not capable with our limited knowledge, a predicting which way we'll go next. 8 inches is no-in-ease coast. I've got an explanation that's not climate change. It's called winter. Thanks to today's hyperbole infused media, we're almost numb or indifferent to anything that isn't about to literally kill us. Why aren't more people worried? Patricia Linville and Gregory Fisher argue that we have a finite pool of worry. And climate change isn't allowed in the water. We view and make sense of our world through frames, not just so we can focus better on what's inside, but also to decide what we can ignore. For some people, your frame is built based on your political party. For others, it's carved out of your religious beliefs, or your economic philosophy. Viewing the world through the same frame as your social in-group, whatever that might be, is important to remaining part of that in-group. Basically, we're all puppets controlled by the strings of social conformity. That's not a choice. It's just who we are. From the time where kids we read social cues from people around us, like how to talk or not burping in public, are survivors to literally depend on being part of a social group. So if you're part of some social group that doesn't believe in climate change, you have two risks to weigh. Climate change and all of its uncertainties were the very personal risk of becoming an outsider. Sociologists Stanley Cohen writes that climate change denial isn't not knowing or refusing to know. It's about choosing not to notice or talk about it, so that we don't rock the in-group vote. Climate change is almost the perfect problem. We've got to do something about it, but every one of its attributes goes against our psychology. It's like that black cloud from loss. It has no identity, no home, no single cause, and no single solution. It's about more than science involved economics, morals, human rights, ideology, technology. It's really hard. In another video, we laid out the facts about why man-made climate change is real. And here we talked about the many reasons why facts don't always work, but I haven't answered the most important question. How do we get people to act? The truth is, I don't know. Action is the destination, but I'm not sure about the path we should take to get there. I mean, is anyone? I don't know what you think. When it comes to tackling climate change, to exploring solutions and adapting to the new future, what are you worried are unsure about? What are you hopeful about? What do you want us to explore? We'll definitely be coming back to this in the near future. So let me know down in the comments, and we can figure out where to go together. I think the psychology behind climate science might actually be more interesting than actual climate science. If you want to read more, check out, don't even think about it. Why are brains are wired to ignore climate change by George Marshall? Link down in the description. Stay curious. I mean, I care about the environment. I figure with the polar bears and everything, reminds me of a trial-electric cars. But we have to lose. And then they go caps lock serious. Saying they have proof that climate change is a hoax perpetuated by scientists paid off by the polar bear lobby as part of a plan to install algores Supreme World polar bear emperor. Wake up, sheeple."
         }
     ]
 }
