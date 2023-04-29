@@ -1,0 +1,1 @@
+NEW_SEARCH: I am going to give you a json objects representing search results using the YouTube API. I want you to creata a 5-element bullet point list where each element is a query that I can directly paste in the YouTube search bar. Do not give me anything else (no introductions or warnings). The bullets should be numnbers 1 through 5 followed by a full stop and a whitespace.
