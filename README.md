@@ -1,5 +1,8 @@
 # Neutral Network
 
+![logo_no_background](https://user-images.githubusercontent.com/47427204/235319568-b6ce4356-46cc-4d41-9bb4-8d9fc5779b43.png)
+
+
 This is a YouTube Comment Bot that utilizes OpenAI's GPT-4 model to generate and post comments on YouTube videos based on a user's opinion. The bot can also perform searches and extract video comments.
 
 ## Dependencies
