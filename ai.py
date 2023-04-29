@@ -8,7 +8,7 @@ class AI:
         self.messages.append({"role": "user", "content": prompt})
         
         response_json = self.openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=self.messages,
         )
 

@@ -14,8 +14,5 @@ query = input("Enter an Opinion: ")
 
 youtube_search.search_loop(query)
 
-# # if search_response:
-# #     youtube_search.save_json_to_file(search_response)
-# # Get the video ID from the search response
 
 # youtube_search.post_comment("mv4gQ7G-3RU", "Hello World")
