@@ -58,38 +58,47 @@ class YouTubeSearch:
             print(f'An error occurred: {e}')
             return None
 
-    def save_json_to_file(self, query, search_response, filename='search_response.json'):
+    def video_json(self, query, search_response):
 
-        # Update JSON file with new search results
-        with open(filename, 'w') as f_out:
+        # Update JSON file with new search result
+        searches = []
+        # Create new search object to append to existing list
+        for item in search_response:
 
-            searches = []
-            # Create new search object to append to existing list
-            for item in search_response:
+            video_id = item['id']['videoId']
+            link = f'https://www.youtube.com/watch?v={video_id}'
+            transcript = transcribe_video(link)
 
-                video_id = item['id']['videoId']
-                link = f'https://www.youtube.com/watch?v={video_id}'
-                transcript = transcribe_video(link)
+            search_object = {
+                "query": query,
+                "search_response": item,
+                "transcript": transcript
+            }
 
-                search_object = {
-                    "query": query,
-                    "search_response": item,
-                    "transcript": transcript
-                }
+            searches.append(search_object)
 
-                searches.append(search_object)
-
-            json_data = {'searches': searches}
-
-            # Write the JSON data to the file
-            with open(filename, 'w') as f_out:
-                json.dump(json_data, f_out, indent=4)
-
+        json_data = {'searches': searches}
+ 
+        return json_data
+            
     def search_loop(self, query):
         # Call the search_videos function once with user-specified input
         search_response = self.search_videos(query)["items"]
+        videos_json = self.video_json(query, search_response)
 
-        self.save_json_to_file(query, search_response)
+        user_opinion = "User Opinion: " + query
+
+        # open search_response.json
+        with open('search_response.json', 'r') as f:
+            videos_json = json.load(f)
+
+        for video in videos_json['searches']:
+            print("Initializing AI...")
+            ai = AI(system=self.prompts["SENTIMENT"], openai_module=openai)
+            print("Generating response...")
+            response, messages = ai.generate_response(f"{video} \n {user_opinion}")
+
+            print(response)
 
         # with open('search_response.json', 'r') as f:
         #     search_response = json.load(f)
@@ -98,14 +107,14 @@ class YouTubeSearch:
 
         #     ai = AI(system=self.prompts["NEW_SEARCH"], openai_module=openai)
         #     prompt =  str(search_response)
-        #     response, messages = ai.generate_response(prompt)
+        #     
             
         #     # Parse response
         #     queries = parse_bullets(response)
             
         #     for query in queries:
         #         search_response = self.search_videos(query)
-        #         self.save_json_to_file(query, search_response)
+                # self.save_json_to_file(query, search_response)
 
     @staticmethod
     def post_comment(video_id, comment):
